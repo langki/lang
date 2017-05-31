@@ -1,5 +1,5 @@
 ## 1. 将日期转换为指定的格式：比如转换成 年月日时分秒 这种格式：yyyy-MM-dd hh:mm:ss 或者 yyyy-MM-dd。当然是网上的方法，只是总结下。
-   可以为Date原型添加如下的方法：
+  可以为Date原型添加如下的方法：
 
   复制代码
   Date.prototype.format = function(fmt) { 
@@ -53,7 +53,7 @@
 
 ## 3. 将 "时间戳" 转换为 "年月日" 的格式.
 
-  比如如下代码： 
+   比如如下代码： 
 
     var da = 1402233166999;
     da = new Date(da);
@@ -62,6 +62,6 @@
     var date = da.getDate()+'日';
     console.log([year,month,date].join('-'));
 
-运行如下：
+   运行如下：
 
-  2014年-6月-8日
+   2014年-6月-8日
