@@ -1,7 +1,7 @@
 - 使用
 - 动态赋值页面根元素(html)的字体大小
 
-    (function (doc, win) {
+    `(function (doc, win) {
         var docEl = doc.documentElement,
         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
 
@@ -22,11 +22,11 @@
 
         if (!doc.addEventListener) return;
         win.addEventListener(resizeEvt, recalc, false);
-    })(document, window);
+    })(document, window);`
 
-页面引入这段脚本，再根据实际设计图取值，给相应的部位设置 css。
+    页面引入这段脚本，再根据实际设计图取值，给相应的部位设置 css。
 
-例如根元素(html)字体大小为 100 像素时，宽为 100 像素的 div，其样式设置为 width:1rem; 。
+    例如根元素(html)字体大小为 100 像素时，宽为 100 像素的 div，其样式设置为 width:1rem; 。
 
 - 心得：
 
